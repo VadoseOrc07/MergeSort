@@ -1,0 +1,26 @@
+# CLion i pliki kompilacji
+.idea/
+build/
+build-*/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.exe
+
+# Wygenerowana dokumentacja Doxygen
+docs/doxygen/
+
+# Pliki pomocnicze LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+*.idx
+*.ilg
+*.ind
+*.tmp
