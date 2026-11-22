@@ -1,0 +1,17 @@
+PROJECT_NAME           = "MergeSort"
+OUTPUT_LANGUAGE        = Polish
+INPUT_ENCODING         = UTF-8
+
+INPUT                  = MergeSort.h main.cpp
+OUTPUT_DIRECTORY       = docs/doxygen
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+SOURCE_BROWSER         = YES
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = YES
+USE_PDFLATEX           = YES
+
+HAVE_DOT               = NO
+QUIET                  = YES

@@ -3,6 +3,10 @@
 build/
 build-*/
 cmake-build-*/
+/main
+/MergeSortTests
+/mergesort
+/mergesort_tests
 *.o
 *.a
 *.so
