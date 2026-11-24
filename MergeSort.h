@@ -5,9 +5,23 @@
 #include <stdexcept>
 #include <vector>
 
+/**
+ * @brief Sortowanie tablic rosnaco algorytmem MergeSort.
+ * @tparam T Typ elementow tablicy, np. int, long int, double, float.
+ *
+ * Zlozonosc czasowa: O(n log n).
+ * Dodatkowa pamiec: O(n).
+ */
+
 template <typename T>
 class MergeSort {
 public:
+    /**
+ * @brief Sortuje przekazana tablice.
+ * @param data Wskaznik do pierwszego elementu.
+ * @param size Liczba elementow tablicy.
+ * @throws std::invalid_argument Gdy data jest nullptr i size > 0.
+ */
     void sort(T* data, std::size_t size) const {
         if (size == 0) {
             return;
@@ -29,6 +43,9 @@ public:
     }
 
 private:
+    /**
+ * @brief Rekurencyjnie sortuje przedzial [left, right).
+ */
     void sortRange(
         T* data,
         T* buffer,
@@ -46,7 +63,9 @@ private:
 
         merge(data, buffer, left, middle, right);
     }
-
+    /**
+ * @brief Scala dwie posortowane czesci tablicy przez bufor pomocniczy.
+ */
     void merge(
         T* data,
         T* buffer,
